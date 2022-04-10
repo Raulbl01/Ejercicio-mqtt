@@ -1,0 +1,153 @@
+Script iniciado en 2022-04-07 11:30:38+02:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="154" LINES="39"]
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ 01_[K[K[Kpython3 [K[K[K[K[K[K[K[Kcat sesion.txt[3@scrip[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcat sesion.txtsion.txt[1Pion.txtls[Kscript sesion.txt[3Pca[C[C[C[C[C[C[C[C[C[C[C[C[Kpython3 01_broker_test.py wild.mat.uu[Kcm.es ""c"l"e"i"[1P"[1P"i"e"n"t"s"/"t"
+MESSAGE: None clients/t 0 b'timer working. timeout: 3.040805506318951' 0
+MESSAGE: None clients/t 0 b'timer working. timeout: 3.040805506318951' 0
+MESSAGE: None clients/t 0 b'timer working. timeout: 19.798925324186214' 0
+^CTraceback (most recent call last):
+  File "01_broker_test.py", line 25, in <module>
+    main(broker, topic)
+  File "01_broker_test.py", line 16, in main
+    mqttc.loop_forever()
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ python3 02_combine_numbers.py wildma[K[K[Kd.mat.ucm.es
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Sending CONNECT (u0, p0, wr0, wq0, wf0, c1, k60) client_id=b''
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Sending SUBSCRIBE (d0, m1) [(b'numbers', 0)]
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Received CONNACK (0, 0)
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Received SUBACK
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'94'
+timer working. timeout: 4.483767229327182
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (18 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'0.7296326183091678'
+invalid literal for int() with base 10: b'0.7296326183091678'
+timer end working
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'58'
+timer working. timeout: 0.8724877815698373
+timer end working
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'22'
+timer working. timeout: 14.262335494836051
+LOG {'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'} 16 Received PUBLISH (d0, q0, r0, m0), 'numbers', ...  (2 bytes)
+MESSAGE:data:{'client': <paho.mqtt.client.Client object at 0x7fe6a55bb940>, 'broker': 'wild.mat.ucm.es'}, msg.topic:numbers, payload:b'31'
+^CProcess Process-3:
+Traceback (most recent call last):
+  File "02_combine_numbers.py", line 85, in <module>
+    main(broker)
+  File "02_combine_numbers.py", line 76, in main
+    mqttc.loop_forever()
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1756, in loop_forever
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "02_combine_numbers.py", line 46, in timer
+    sleep(time)
+KeyboardInterrupt
+    rc = self._loop(timeout)
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ python3 02_combine_numbers.py wild.mat.ucm.es[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1_broker_test.py wild.mat.ucm.es "clients/t"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"t"e"m"p"e"r"a"t"u"r"e"/"#"
+MESSAGE: None temperature/t1 0 b'7' 0
+MESSAGE: None temperature/t2 0 b'7' 0
+MESSAGE: None temperature/t1 0 b'8' 0
+MESSAGE: None temperature/t2 0 b'10' 0
+MESSAGE: None temperature/t1 0 b'9' 0
+MESSAGE: None temperature/t2 0 b'9' 0
+MESSAGE: None temperature/t1 0 b'10' 0
+MESSAGE: None temperature/t2 0 b'10' 0
+^CTraceback (most recent call last):
+  File "01_broker_test.py", line 25, in <module>
+    main(broker, topic)
+  File "01_broker_test.py", line 16, in main
+    mqttc.loop_forever()
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ python3 03_temperatures.py wildm[K.mat.ucm.es
+on_message temperature/t1 b'23'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'23']}}
+on_message temperature/t2 b'21'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'23'], 't2': [b'21']}}
+on_message temperature/t1 b'24'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'24'], 't2': [b'21']}}
+on_message temperature/t2 b'23'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'24'], 't2': [b'23']}}
+on_message temperature/t1 b'25'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'25'], 't2': [b'23']}}
+on_message temperature/t2 b'26'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'25'], 't2': [b'26']}}
+on_message temperature/t1 b'26'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'26'], 't2': [b'26']}}
+on_message temperature/t2 b'24'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'26'], 't2': [b'24']}}
+on_message temperature/t1 b'27'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'27'], 't2': [b'24']}}
+on_message temperature/t2 b'27'
+on_message {'lock': <unlocked _thread.lock object at 0x7fb011e888c8>, 'temp': {'t1': [b'27'], 't2': [b'27']}}
+^CTraceback (most recent call last):
+  File "03_temperatures.py", line 45, in <module>
+    main(broker)
+  File "03_temperatures.py", line 33, in main
+    sleep(8)
+KeyboardInterrupt
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ python 01_broker_test.py wild.mat.ucm.es ""t"e"m"p"e"r"a"t"u"r"e"/"t"1"
+  File "01_broker_test.py", line 21
+    print(f"Usage: {sys.argv[0]} broker topic")
+                                             ^
+SyntaxError: invalid syntax
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ python 01_broker_test.py wild.mat.ucm.es "temperature/t1"
+  File "01_broker_test.py", line 21
+    print(f"Usage: {sys.argv[0]} broker topic")
+                                             ^
+SyntaxError: invalid syntax
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ python 01_broker_test.py wild.mat.ucm.es "temperature/t1"[C[C[C[1@3
+MESSAGE: None temperature/t1 0 b'32' 0
+MESSAGE: None temperature/t1 0 b'33' 0
+MESSAGE: None temperature/t1 0 b'34' 0
+MESSAGE: None temperature/t1 0 b'35' 0
+MESSAGE: None temperature/t1 0 b'36' 0
+^CTraceback (most recent call last):
+  File "01_broker_test.py", line 25, in <module>
+    main(broker, topic)
+  File "01_broker_test.py", line 16, in main
+    mqttc.loop_forever()
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ python3 04_humidity.py wild.mat.ucm.es
+message:temperature/t1:b'38':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+umbral superado 38, suscribiendo a humidity
+message:temperature/t1:b'39':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'80':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+message:humidity:b'87':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 1}
+umbral humedad 87 superado, cancelando suscripciÃ³n
+message:temperature/t1:b'0':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'1':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'2':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'3':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'4':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+message:temperature/t1:b'5':{'temp_threshold': 20, 'humidity_threshold': 80, 'status': 0}
+^CTraceback (most recent call last):
+  File "04_humidity.py", line 50, in <module>
+    main(broker)
+  File "04_humidity.py", line 42, in main
+    mqttc.loop_forever()
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1756, in loop_forever
+    rc = self._loop(timeout)
+  File "/usr/local/lib/python3.7/dist-packages/paho/mqtt/client.py", line 1150, in _loop
+    socklist = select.select(rlist, wlist, [], timeout)
+KeyboardInterrupt
+]0;raulbl01@simba: ~[01;32mraulbl01@simba[00m:[01;34m~[00m$ exit
+
+Script terminado en 2022-04-07 11:37:59+02:00 [CÓDIGO_SALIDA_ORDEN="1"]
